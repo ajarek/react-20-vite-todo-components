@@ -1,0 +1,19 @@
+.btn-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #489cc1;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .btn-submit:hover {
+    background-color: #bdc3c7;
+    transform: scale(1.025);
+  }

@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  width: 800px;
+  height:600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  border: solid;
+  background-color:#489cc1;
+}
+.container{
+  width: 600px;
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
