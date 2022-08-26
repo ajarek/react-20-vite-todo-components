@@ -17,3 +17,13 @@
     background-color: #bdc3c7;
     transform: scale(1.025);
   }
+  .btn-delete{
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  .btn-delete:hover{
+    transform: scale(1.3);
+  }
