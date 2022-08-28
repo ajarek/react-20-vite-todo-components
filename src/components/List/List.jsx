@@ -15,8 +15,9 @@ export const List =(props)=>{
      type={'checkbox'}
       onChange={onChange}
      className={'checkbox'}
+     id={children}
      />
-        { children}
+        <label htmlFor={children}>{ children}</label>
         </div>
         <div className="row">
         <Button

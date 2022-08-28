@@ -7,7 +7,7 @@ export class App extends React.Component {
     newTaskText: "",
     tasks:[]
   };
-  toggleChange = (id) => {
+  toggleItem = (id) => {
     const newElements = this.state.tasks;
     newElements.forEach((element) => {
       if (element.id === id) {
@@ -76,7 +76,7 @@ componentDidMount () {
               <List
                 checked={el.isCompleted}
                 className={`li ${el.isCompleted ? "completed" : ""}`}
-                onChange={() => this.toggleChange(el.id)}
+                onChange={() => this.toggleItem(el.id)}
                 id={el.id}
                 key={index}
                 btnEdit={() => this.editItem(el.id)}
