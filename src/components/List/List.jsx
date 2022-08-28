@@ -2,15 +2,18 @@ import './list.css'
 import {Button} from '../Button/Button'
 import {Input} from '../Input/Input'
 export const List =(props)=>{
-    const{btnDelete,  children, className, ...otherProps}=props
+    const{onChange, checked, btnDelete,btnEdit,children, className, ...otherProps}=props
     return (
     <li
     className={className}
+   
     {...otherProps}
     > 
     <div className="row">
      <Input
+      checked={checked}
      type={'checkbox'}
+      onChange={onChange}
      className={'checkbox'}
      />
         { children}
@@ -18,6 +21,7 @@ export const List =(props)=>{
         <div className="row">
         <Button
        className={'btn-delete'}
+       onClick={btnEdit}
      > 🖊️
      </Button>
      <Button

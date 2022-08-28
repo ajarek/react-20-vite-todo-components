@@ -12,7 +12,6 @@
     color: #fff;
     transition: 0.3s ease-in-out;
   }
-  
   .btn-submit:hover {
     background-color: #bdc3c7;
     transform: scale(1.025);
