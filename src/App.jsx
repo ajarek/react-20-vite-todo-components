@@ -5,11 +5,7 @@ import { List } from "./components/List/List";
 export class App extends React.Component {
   state = {
     newTaskText: "",
-    tasks: [
-      { id: "1661554536940", text: "Zrobić pranie", isCompleted: false },
-      { id: "1661554534484", text: "Naucz się React", isCompleted: false },
-      { id: "1661554529189", text: "Zrobić zakupy", isCompleted: false },
-    ],
+    tasks:[]
   };
   toggleChange = (id) => {
     const newElements = this.state.tasks;
@@ -54,6 +50,16 @@ export class App extends React.Component {
     this.setState({ tasks: [newTask, ...this.state.tasks] });
     this.state.newTaskText = "";
   };
+//localStorage
+componentDidMount () {
+  const tasksRaw = localStorage.getItem('tasks')
+  const tasks = JSON.parse(tasksRaw) || []
+  this.setState(() => ({ tasks }))
+}
+  componentDidUpdate () {
+    localStorage.setItem('tasks', JSON.stringify(this.state.tasks))
+}
+
   render() {
     return (
       <div className="App">
