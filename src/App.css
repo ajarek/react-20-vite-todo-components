@@ -9,6 +9,7 @@
   padding: 2rem;
   text-align: center;
   background-color:#489cc1;
+  overflow-y: auto;
 }
 .container{
   width: 600px;
@@ -20,4 +21,14 @@
   padding: 1rem;
   transform: translateY(5px);
   box-shadow: inset 0px 3px 10px 2px rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width:800px){
+#root{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    }
+    .container{
+      width: 95vw;
+    }
 }

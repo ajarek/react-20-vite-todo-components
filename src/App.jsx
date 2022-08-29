@@ -45,7 +45,7 @@ export class App extends React.Component {
     const newTask = {
       id: String(Date.now()),
       text: this.state.newTaskText,
-      isCompleted: this.state.isChecked,
+      isCompleted:false,
     };
     this.setState({ tasks: [newTask, ...this.state.tasks] });
     this.state.newTaskText = "";
