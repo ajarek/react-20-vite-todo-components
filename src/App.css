@@ -22,6 +22,29 @@
   transform: translateY(5px);
   box-shadow: inset 0px 3px 10px 2px rgba(0, 0, 0, 0.4);
 }
+.row-info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.info{
+  width: 200px;
+  height: 20px;
+  position: relative;
+  font-size: 1.1rem;
+}
+.info span{
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:aquamarine ;
+  height: 30px;
+  z-index: -50;
+}
 @media screen and (max-width:800px){
 #root{
     width: 100vw;
