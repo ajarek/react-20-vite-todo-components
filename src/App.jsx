@@ -29,7 +29,10 @@ export class App extends React.Component {
       }
     })
   }
-
+  removeAllChecked = ()=>{
+    const newElements = this.state.tasks.filter((element) =>  !element.isCompleted)
+    this.setState({ tasks: newElements })
+  }
   deleteItem = (id) => {
     const newElements = this.state.tasks.filter((element) => element.id != id)
 
@@ -107,6 +110,7 @@ componentDidMount () {
             </div>
           <Button
           className={" btn-remove-checked"}
+          onClick={this.removeAllChecked}
           >Remove checked ❌</Button>
           </div>
         </div>
